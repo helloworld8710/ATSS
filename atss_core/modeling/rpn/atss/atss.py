@@ -228,4 +228,5 @@ class ATSSModule(torch.nn.Module):
 
 
 def build_atss(cfg, in_channels):
+    # 在build_rpn()函数中被调用
     return ATSSModule(cfg, in_channels)
