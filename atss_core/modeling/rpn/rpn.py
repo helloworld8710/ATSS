@@ -203,6 +203,7 @@ def build_rpn(cfg, in_channels):
     """
     This gives the gist of it. Not super important because it doesn't change as much
     """
+    # 此处判断rpn的类型，然后调用相应的头部函数。
     if cfg.MODEL.ATSS_ON:
         return build_atss(cfg, in_channels)
     if cfg.MODEL.FCOS_ON:
